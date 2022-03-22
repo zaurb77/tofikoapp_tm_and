@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_bg_white_5dp"
+        android:orientation="vertical"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_7sdp"
+        android:layout_marginBottom="@dimen/_7sdp"
+        android:elevation="@dimen/_3sdp"
+        android:padding="@dimen/_8sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <controls.CTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="John Doe"
+                android:textColor="@color/appColor"
+                android:textStyle="bold"
+                android:textSize="@dimen/_12sdp" />
+
+
+            <controls.CTextView
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="2019-09-12"
+                android:textColor="@color/lightBlue"
+                android:textSize="@dimen/_10sdp" />
+
+
+        </LinearLayout>
+
+        <RatingBar
+            android:id="@+id/rating"
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:theme="@style/RatingBar" />
+
+        <controls.CTextView
+            android:id="@+id/comment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            tools:text="anbdv dasfgdjsg dgjndsg sgjn ggjdsg dskg gjsipg gjpsg asbfjad adghfdlo gdigdigdogjdgfjd"
+            android:textColor="@color/lightBlue"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <controls.CTextView
+            android:id="@+id/commentAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:gravity="end"
+            android:layout_gravity="end"
+            tools:text="-comments for restaurant manager"
+            android:textColor="@color/colorBlue"
+            android:textSize="@dimen/_10sdp" />
+
+
+        <controls.CTextView
+            android:id="@+id/replay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@drawable/round_corner_border_green"
+            android:gravity="end"
+            android:padding="@dimen/_7sdp"
+            android:text="  Reply  "
+            android:textColor="@color/colorDarkRed"
+            android:textSize="@dimen/_10sdp"
+            android:visibility="visible" />
+
+
+    </LinearLayout>
+</layout>

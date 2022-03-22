@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/_7sdp"
+        android:paddingBottom="@dimen/_7sdp"
+        android:background="@drawable/bottom_gray_line"
+        android:gravity="center">
+
+        <controls.CTextView
+            android:id="@+id/tvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            tools:text="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <controls.CTextView
+                android:id="@+id/tvUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                tools:text="John Doe" />
+
+             <controls.CTextView
+                android:id="@+id/tvNote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp"
+                 android:visibility="gone"
+                tools:text="John Doe" />
+
+        </LinearLayout>
+
+        <controls.CTextView
+            android:id="@+id/tvPerson"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            tools:text="1" />
+
+        <controls.CTextView
+            android:id="@+id/tvStatus"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:paddingStart="@dimen/_10sdp"
+            android:paddingEnd="@dimen/_10sdp"
+            android:gravity="center"
+            android:paddingBottom="@dimen/_2sdp"
+            android:background="@drawable/background_light_blue"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            tools:text="Pending" />
+
+    </LinearLayout>
+
+</layout>

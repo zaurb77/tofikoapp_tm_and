@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/corner_bg_white_5dp"
+        android:layout_margin="@dimen/_5sdp"
+        android:orientation="vertical"
+        android:elevation="@dimen/_2sdp"
+        android:padding="@dimen/_5sdp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+
+            <controls.CTextView
+                android:id="@+id/orderId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                tools:text="Order ID"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                tools:text="Address"
+                android:paddingStart="@dimen/_5sdp"
+                android:paddingEnd="@dimen/_5sdp"
+                android:paddingBottom="@dimen/_5sdp"
+                android:paddingTop="@dimen/_5sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_9sdp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"/>
+
+            <controls.CTextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Price"
+                android:textColor="@color/colorRed"
+                android:textSize="@dimen/_12sdp" />
+
+
+        </LinearLayout>
+
+
+        <controls.CTextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            tools:text="Customer Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+
+        <controls.CTextView
+            android:id="@+id/customerName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            tools:text="Customer Name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+        <controls.CTextView
+            android:id="@+id/customerNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            tools:text="Customer Number"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+
+        <controls.CTextView
+            android:id="@+id/address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            tools:text="Address"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp" />
+
+        <controls.CTextView
+            android:id="@+id/cancelNote"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/_3sdp"
+            tools:text="Cancel Note : Order cancel due to this reason"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="visible" />
+
+
+
+
+
+    </LinearLayout>
+</layout>

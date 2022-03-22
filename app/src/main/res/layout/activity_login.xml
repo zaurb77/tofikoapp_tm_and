@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/login_bg" />
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_20sdp"
+                android:layout_marginEnd="@dimen/_20sdp"
+                android:orientation="vertical">
+
+
+                <controls.CEditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="0.01dp"
+                    android:background="@drawable/corner_border"
+                    android:inputType="textEmailAddress"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/appColor"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <controls.CEditText
+                    android:id="@+id/passWord"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/corner_border"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:textColor="@color/appColor"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <controls.CTextView
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:background="@drawable/corner_border"
+                    android:gravity="center"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/appColor"
+                    android:textSize="@dimen/_11sdp" />
+
+
+                <controls.CTextView
+                    android:id="@+id/forgotPassword"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:gravity="start"
+                    android:padding="@dimen/_5sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_11sdp" />
+
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <controls.CTextView
+            android:id="@+id/alreadyLoginText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|bottom"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="start"
+            android:layout_marginBottom="@dimen/_20sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_11sdp" />
+
+
+
+    </FrameLayout>
+
+</layout>
+
+

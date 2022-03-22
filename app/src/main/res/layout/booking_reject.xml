@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/_10sdp"
+            android:padding="@dimen/_15sdp"
+            android:background="@drawable/corner_bg_white_5dp"
+            android:orientation="vertical">
+
+            <controls.CTextView
+                android:id="@+id/tvName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_gravity="center"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_15sdp"
+                android:textStyle="bold" />
+
+            <controls.CTextView
+                android:id="@+id/tvSpecial"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/_12sdp" />
+
+            <controls.CEditText
+                android:id="@+id/etReason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:minHeight="@dimen/_90sdp"
+                android:padding="@dimen/_5sdp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:background="@drawable/border_grey"
+                android:textSize="@dimen/_12sdp"
+                android:textColorHint="@color/grey" />
+
+            <controls.CTextView
+                android:id="@+id/btnReject"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:background="@drawable/bg_blue_corner"
+                android:gravity="center"
+                android:padding="@dimen/_8sdp"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

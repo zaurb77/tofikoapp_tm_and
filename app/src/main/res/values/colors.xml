@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#37AFB4</color>
+    <color name="colorPrimaryDark">#37AFB4</color>
+    <color name="colorRed">#B93026</color>
+    <color name="colorDarkRed">#d50000</color>
+    <color name="colorWhite">#FFF</color>
+    <color name="colorGreen">#008000</color>
+    <color name="colorBlack">#000</color>
+    <color name="grey">#575757</color>
+    <color name="white">#FFFFFF</color>
+    <color name="lightGrey">#949ea7</color>
+    <color name="lightGrey_">#22949ea7</color>
+    <color name="black">#000000</color>
+    <color name="colorBlue">#19475C</color>
+    <color name="colorYeallow">#F9C137</color>
+    <color name="caldroid_white">#FFFFFF</color>
+    <color name="lightGray">#AAAAAA</color>
+    <color name="appColor">#37AFB4</color>
+    <color name="lightBlue">#606060</color>
+</resources>
+
+

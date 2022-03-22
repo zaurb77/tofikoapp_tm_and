@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activity.AddToCartActivity">
+
+
+        <LinearLayout
+            android:id="@+id/llToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+            android:background="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <ImageView
+                android:id="@+id/backOne"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/back"
+                android:tint="@color/white" />
+
+
+            <controls.CTextView
+                android:id="@+id/resName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Item Detail"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_13sdp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:padding="@dimen/_8sdp"
+                android:tint="@color/white" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/llFrame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/backImage"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_200sdp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:layout_gravity="bottom"
+                android:src="@drawable/shodow" />
+
+
+            <ImageView
+                android:id="@+id/resImage"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="@dimen/_35sdp"
+                android:layout_gravity="end"
+                android:adjustViewBounds="true"
+                android:padding="@dimen/_8sdp"
+                android:src="@drawable/edit_img" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/_3sdp">
+
+                <controls.CTextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/_8sdp"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_12sdp"
+                    android:textStyle="bold"
+                    tools:text="Fries" />
+
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+
+            </LinearLayout>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+
+            <controls.CTextView
+                android:id="@+id/name"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_weight="1"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/lightBlue"
+                android:textSize="@dimen/_13sdp"
+                tools:text="Food Name" />
+
+
+            <controls.CTextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:textStyle="bold"
+                tools:text="€10.00" />
+
+        </LinearLayout>
+
+        <controls.CTextView
+            android:id="@+id/ingredient"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="Ingredients : " />
+
+        <controls.CTextView
+            android:id="@+id/ingredientDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/grey"
+            android:visibility="gone"
+            tools:text="Type of Cusine" />
+
+
+        <controls.CTextView
+            android:id="@+id/allergnes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/grey"
+            android:textSize="@dimen/_13sdp"
+            android:textStyle="bold"
+            android:visibility="gone"
+            tools:text="Allergnes : " />
+
+        <controls.CTextView
+            android:id="@+id/allergnesText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/grey"
+            android:visibility="gone"
+            tools:text="Type of Allergnes" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+
+            <controls.CTextView
+                android:id="@+id/addTocart"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorBlue"
+                android:gravity="center"
+                android:padding="@dimen/_12sdp"
+                android:text="Add to Cart"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:visibility="gone" />
+
+
+            <controls.CTextView
+                android:id="@+id/favourite"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_15sdp"
+                android:layout_weight="1"
+                android:background="@drawable/corner_bg_blue"
+                android:gravity="center"
+                android:padding="@dimen/_10sdp"
+                android:text="Show Customization"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</layout>

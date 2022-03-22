@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/llDecline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="@dimen/_10sdp"
+        android:visibility="visible">
+
+        <controls.CTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            android:text="Select any one reason for order cancellation"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:id="@+id/llReasonOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+
+            <controls.CTextView
+                android:id="@+id/reasonOne"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Product not available"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <ImageView
+                android:id="@+id/imgOne"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/radio_blank" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llReasonTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <controls.CTextView
+                android:id="@+id/reasonTwo"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Extraordinary closure"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <ImageView
+                android:id="@+id/imgTwo"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/radio_blank" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llReasonThree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <controls.CTextView
+                android:id="@+id/reasonThree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Technical problems"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+
+            <ImageView
+                android:id="@+id/imgTree"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/radio_blank" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llReasonFour"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="@dimen/_5sdp">
+
+            <controls.CTextView
+                android:id="@+id/reasonFour"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:text="Other"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+
+            <ImageView
+                android:id="@+id/imgFour"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:tint="@color/colorPrimary"
+                android:src="@drawable/radio_blank" />
+
+        </LinearLayout>
+
+
+        <controls.CEditText
+            android:id="@+id/otherIssue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_5sdp"
+            android:background="@drawable/corner_border"
+            android:gravity="top"
+            android:hint="Enter your reason"
+            android:lines="4"
+            android:padding="@dimen/_5sdp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_11sdp"
+            android:visibility="gone" />
+
+
+        <controls.CTextView
+            android:id="@+id/decline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorDarkRed"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:padding="@dimen/_7sdp"
+            android:textSize="@dimen/_11sdp"
+            android:text="Decline"/>
+
+
+    </LinearLayout>
+
+</layout>

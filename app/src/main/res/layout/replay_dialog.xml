@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99000000"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/_8sdp">
+
+
+        <LinearLayout
+            android:layout_width="@dimen/_270sdp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/corner_bg_white"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_5sdp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+
+                <controls.CTextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:text="Write your feedback here"
+                    android:textColor="@color/colorDarkRed"
+                    android:textSize="@dimen/_11sdp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/close"
+                    android:layout_width="@dimen/_25sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:padding="@dimen/_5sdp"
+                    android:visibility="visible"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:src="@drawable/close" />
+
+
+            </LinearLayout>
+
+
+          <controls.CEditText
+              android:id="@+id/messageReply"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@drawable/corner_border"
+              android:layout_marginStart="@dimen/_8sdp"
+              android:layout_marginEnd="@dimen/_8sdp"
+              android:hint="Type here reply..."
+              android:textSize="@dimen/_10sdp"
+              android:gravity="top"
+              android:padding="@dimen/_5sdp"
+              android:lines="5"/>
+
+
+
+            <controls.CTextView
+                android:id="@+id/sendReplay"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:text="Submit"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/_10sdp"
+                android:textSize="@dimen/_11sdp"
+                android:textColor="@color/white"
+                android:background="@drawable/corner_bg_green"/>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
